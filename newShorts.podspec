@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'newShorts'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
