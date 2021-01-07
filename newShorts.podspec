@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'newShorts'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
@@ -22,7 +22,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5'
   s.source_files = 'newShorts/Classes/**/*'
-  
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
   # s.resource_bundles = {
   #   'newShorts' => ['newShorts/Assets/*.png']
   # }
