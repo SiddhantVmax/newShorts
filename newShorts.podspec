@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'newShorts'
-  s.version          = '0.0.3'
+  s.version          = '0.0.5'
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/SiddhantVmax/newShorts.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.swift_version = '5'
   s.source_files = 'newShorts/Classes/**/*'
   
