@@ -1,7 +1,7 @@
 PODS:
-  - newShorts (0.0.1):
+  - newShorts (0.0.6):
     - VMaxAdsSDK
-  - VMaxAdsSDK (0.0.54)
+  - VMaxAdsSDK (0.0.55)
 
 DEPENDENCIES:
   - newShorts (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  newShorts: e0a781af7172d83c2987470633b7e58724e209f1
-  VMaxAdsSDK: c9ff51646ffbca059bf4e50731e6874eb594c753
+  newShorts: cd51167ef25748b972a4f392f11649452eed896e
+  VMaxAdsSDK: 25ce835bb4becd5c5a3713e5f52c2efc3dfc716c
 
 PODFILE CHECKSUM: 121357d316e1cebd2d4e83ebaf8c56c0bd7d8471
 

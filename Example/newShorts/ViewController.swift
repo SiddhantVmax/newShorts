@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print(Server.shared.getServerName(serverName: "Warcrafts"))
     }
 
     override func didReceiveMemoryWarning() {
