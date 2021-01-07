@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'newShorts_Example' do
+  pod 'newShorts', :path => '../'
+
+  target 'newShorts_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
