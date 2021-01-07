@@ -269,10 +269,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-newShorts_Example/Pods-newShorts_Example-frameworks.sh",
+				"${PODS_ROOT}/VMaxAdsSDK/VMaxAdsSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/newShorts/newShorts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VMaxAdsSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/newShorts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

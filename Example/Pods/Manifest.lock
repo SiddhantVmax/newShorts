@@ -1,16 +1,23 @@
 PODS:
-  - newShorts (0.1.0)
+  - newShorts (0.0.1):
+    - VMaxAdsSDK
+  - VMaxAdsSDK (0.0.54)
 
 DEPENDENCIES:
   - newShorts (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - VMaxAdsSDK
 
 EXTERNAL SOURCES:
   newShorts:
     :path: "../"
 
 SPEC CHECKSUMS:
-  newShorts: 8090d30e4addc293752030aa18573d0437ef2474
+  newShorts: e0a781af7172d83c2987470633b7e58724e209f1
+  VMaxAdsSDK: c9ff51646ffbca059bf4e50731e6874eb594c753
 
-PODFILE CHECKSUM: d9666b4de50eeb4e157befe34e0e325588b319d7
+PODFILE CHECKSUM: 121357d316e1cebd2d4e83ebaf8c56c0bd7d8471
 
 COCOAPODS: 1.10.0

@@ -1,9 +1,9 @@
 {
   "name": "newShorts",
-  "version": "0.1.0",
-  "summary": "A short description of newShorts.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/siddhant.n@vmax.com/newShorts",
+  "version": "0.0.1",
+  "summary": "VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.",
+  "description": "The experiences can be uploaded in the form of Templates in the Ad Console",
+  "homepage": "https://github.com/SiddhantVmax/newShorts",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "siddhant.n@vmax.com": "siddhant.n@vmax.com"
   },
   "source": {
-    "git": "https://github.com/siddhant.n@vmax.com/newShorts.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/SiddhantVmax/newShorts.git",
+    "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "source_files": "newShorts/Classes/**/*"
+  "source_files": "newShorts/Classes/**/*",
+  "dependencies": {
+    "VMaxAdsSDK": [
+
+    ]
+  }
 }
