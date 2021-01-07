@@ -1,0 +1,6 @@
+framework module newShorts {
+  umbrella header "newShorts-umbrella.h"
+
+  export *
+  module * { export * }
+}

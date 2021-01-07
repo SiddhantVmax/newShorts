@@ -1,0 +1,16 @@
+PODS:
+  - newShorts (0.1.0)
+
+DEPENDENCIES:
+  - newShorts (from `../`)
+
+EXTERNAL SOURCES:
+  newShorts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  newShorts: 8090d30e4addc293752030aa18573d0437ef2474
+
+PODFILE CHECKSUM: d9666b4de50eeb4e157befe34e0e325588b319d7
+
+COCOAPODS: 1.10.0

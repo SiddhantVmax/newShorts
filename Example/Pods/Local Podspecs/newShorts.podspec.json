@@ -1,0 +1,22 @@
+{
+  "name": "newShorts",
+  "version": "0.1.0",
+  "summary": "A short description of newShorts.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/siddhant.n@vmax.com/newShorts",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "siddhant.n@vmax.com": "siddhant.n@vmax.com"
+  },
+  "source": {
+    "git": "https://github.com/siddhant.n@vmax.com/newShorts.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "newShorts/Classes/**/*"
+}

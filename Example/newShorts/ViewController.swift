@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import newShorts
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(Server.shared.getServerName(serverName: "Warcrafts"))
     }
 
     override func didReceiveMemoryWarning() {
