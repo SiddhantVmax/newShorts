@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
-  s.homepage         = 'https://github.com/siddhant.n@vmax.com/newShorts'
+  s.homepage         = 'https://github.com/SiddhantVmax/newShorts'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'siddhant.n@vmax.com' => 'siddhant.n@vmax.com' }
-  s.source           = { :git => 'https://github.com/siddhant.n@vmax.com/newShorts.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SiddhantVmax/newShorts.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
