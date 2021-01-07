@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'newShorts'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
@@ -30,4 +30,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'VMaxAdsSDK'
 end

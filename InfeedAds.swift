@@ -15,8 +15,8 @@ import VMaxAdsSDK
     var postAdModel: PostAdModel?
     var arrayListNativeImageDownloads: NSArray?
     var adView: VMaxAdView!
-    var infeedvideoAdMid = InFeedVideoAdMid()
-    var infeedvideoAdEnd = InFeedViewAdEnd()
+//    var infeedvideoAdMid = InFeedVideoAdMid()
+//    var infeedvideoAdEnd = InFeedViewAdEnd()
     var vmaxDataListeners = VmaxDataListener()
     var isImpressionShowed = false
     var adID = ""
@@ -85,85 +85,85 @@ import VMaxAdsSDK
             vmaxDataListeners.onAdLoaded("success", vmaxAdView: self.adView)
         }
         if adType == 0 {
-            viewLayout(isMidAd: true)
+//            viewLayout(isMidAd: true)
         }
         else {
-            viewLayout(isMidAd: false)
+//            viewLayout(isMidAd: false)
         }
         
         
     }
     
-    func viewLayout(isMidAd: Bool) {
-        DispatchQueue.main.async {
-            self.infeedvideoAdMid.removeFromSuperview()
-            self.infeedvideoAdEnd.removeFromSuperview()
-            if isMidAd{
-                let viewFrame = self.adView.viewObject.frame
-                let width = viewFrame.size.width
-                let height = viewFrame.size.height
-                self.adView.frame = CGRect(x: 0, y: 0, width: width, height: height)
-                self.infeedvideoAdMid = self.infeedVideoAdMid()
-                self.infeedvideoAdMid.alpha = 1
-                self.infeedvideoAdMid.infeedAdModel = self.postAdModel!
-                self.infeedvideoAdMid.delegate = self
-                
-                
-                self.infeedvideoAdMid.translatesAutoresizingMaskIntoConstraints = false
-                self.adView.addSubview(self.infeedvideoAdMid)
-                
-                //                postAdTemplateIconLayout.bottomAnchor.constraint(equalTo: self.adView.bottomAnchor, constant: 0).isActive = true
-                self.infeedvideoAdMid.leadingAnchor.constraint(equalTo: self.adView.leadingAnchor, constant: 0).isActive = true
-                self.infeedvideoAdMid.widthAnchor.constraint(equalToConstant: width).isActive = true
-                self.infeedvideoAdMid.heightAnchor.constraint(equalToConstant: height).isActive = true
-                //                infeedvideoAdMid.trailingAnchor.constraint(equalTo: self.adView.trailingAnchor, constant: 0).isActive = true
-                
-                self.adView.addSubview(self.infeedvideoAdMid)
-                
-                
-                //
-                self.infeedvideoAdMid.topAnchor.constraint(equalTo: self.adView.topAnchor, constant: 0).isActive = true
-            }
-            else {
-                
-                
-                let viewFrame = self.adView.viewObject.frame
-                let width = viewFrame.size.width
-                let height = viewFrame.size.height
-                self.adView.frame = CGRect(x: 0, y: 0, width: width, height: height)
-                
-                self.infeedvideoAdEnd = self.infeedVideoAdEnd()
-                self.infeedvideoAdEnd.alpha = 1
-                self.infeedvideoAdEnd.infeedAdModel = self.postAdModel!
-                self.infeedvideoAdEnd.delegate = self
-                
-                self.infeedvideoAdEnd.translatesAutoresizingMaskIntoConstraints = false
-                self.adView.addSubview(self.infeedvideoAdEnd)
-                
-                //                postAdTemplateLayout.bottomAnchor.constraint(equalTo: self.adView.bottomAnchor, constant: 0).isActive = true
-                
-                self.infeedvideoAdEnd.leadingAnchor.constraint(equalTo: self.adView.leadingAnchor, constant: 0).isActive = true
-                
-                self.infeedvideoAdEnd.widthAnchor.constraint(equalToConstant: width).isActive = true
-                self.infeedvideoAdEnd.heightAnchor.constraint(equalToConstant: height).isActive = true
-                self.adView.addSubview(self.infeedvideoAdEnd)
-                //                postAdTemplateLayout.trailingAnchor.constraint(equalTo: self.adView.trailingAnchor, constant: 0).isActive = true
-                
-                self.infeedvideoAdEnd.topAnchor.constraint(equalTo: self.adView.topAnchor, constant: 0).isActive = true
-            }
-        }
-        
-    }
+//    func viewLayout(isMidAd: Bool) {
+//        DispatchQueue.main.async {
+//            self.infeedvideoAdMid.removeFromSuperview()
+//            self.infeedvideoAdEnd.removeFromSuperview()
+//            if isMidAd{
+//                let viewFrame = self.adView.viewObject.frame
+//                let width = viewFrame.size.width
+//                let height = viewFrame.size.height
+//                self.adView.frame = CGRect(x: 0, y: 0, width: width, height: height)
+//                self.infeedvideoAdMid = self.infeedVideoAdMid()
+//                self.infeedvideoAdMid.alpha = 1
+//                self.infeedvideoAdMid.infeedAdModel = self.postAdModel!
+//                self.infeedvideoAdMid.delegate = self
+//
+//
+//                self.infeedvideoAdMid.translatesAutoresizingMaskIntoConstraints = false
+//                self.adView.addSubview(self.infeedvideoAdMid)
+//
+//                //                postAdTemplateIconLayout.bottomAnchor.constraint(equalTo: self.adView.bottomAnchor, constant: 0).isActive = true
+//                self.infeedvideoAdMid.leadingAnchor.constraint(equalTo: self.adView.leadingAnchor, constant: 0).isActive = true
+//                self.infeedvideoAdMid.widthAnchor.constraint(equalToConstant: width).isActive = true
+//                self.infeedvideoAdMid.heightAnchor.constraint(equalToConstant: height).isActive = true
+//                //                infeedvideoAdMid.trailingAnchor.constraint(equalTo: self.adView.trailingAnchor, constant: 0).isActive = true
+//
+//                self.adView.addSubview(self.infeedvideoAdMid)
+//
+//
+//                //
+//                self.infeedvideoAdMid.topAnchor.constraint(equalTo: self.adView.topAnchor, constant: 0).isActive = true
+//            }
+//            else {
+//
+//
+//                let viewFrame = self.adView.viewObject.frame
+//                let width = viewFrame.size.width
+//                let height = viewFrame.size.height
+//                self.adView.frame = CGRect(x: 0, y: 0, width: width, height: height)
+//
+////                self.infeedvideoAdEnd = self.infeedVideoAdEnd()
+////                self.infeedvideoAdEnd.alpha = 1
+////                self.infeedvideoAdEnd.infeedAdModel = self.postAdModel!
+////                self.infeedvideoAdEnd.delegate = self
+////
+////                self.infeedvideoAdEnd.translatesAutoresizingMaskIntoConstraints = false
+////                self.adView.addSubview(self.infeedvideoAdEnd)
+////
+////                //                postAdTemplateLayout.bottomAnchor.constraint(equalTo: self.adView.bottomAnchor, constant: 0).isActive = true
+////
+////                self.infeedvideoAdEnd.leadingAnchor.constraint(equalTo: self.adView.leadingAnchor, constant: 0).isActive = true
+////
+////                self.infeedvideoAdEnd.widthAnchor.constraint(equalToConstant: width).isActive = true
+////                self.infeedvideoAdEnd.heightAnchor.constraint(equalToConstant: height).isActive = true
+////                self.adView.addSubview(self.infeedvideoAdEnd)
+////                //                postAdTemplateLayout.trailingAnchor.constraint(equalTo: self.adView.trailingAnchor, constant: 0).isActive = true
+////
+////                self.infeedvideoAdEnd.topAnchor.constraint(equalTo: self.adView.topAnchor, constant: 0).isActive = true
+//            }
+//        }
+//
+//    }
     
-    func infeedVideoAdMid() -> InFeedVideoAdMid {
-        let infoWindow = InFeedVideoAdMid.instanceFromNib() as! InFeedVideoAdMid
-        return infoWindow
-    }
-    
-    func infeedVideoAdEnd() -> InFeedViewAdEnd {
-        let infoWindow = InFeedViewAdEnd.instanceFromNib() as! InFeedViewAdEnd
-        return infoWindow
-    }
+//    func infeedVideoAdMid() -> InFeedVideoAdMid {
+//        let infoWindow = InFeedVideoAdMid.instanceFromNib() as! InFeedVideoAdMid
+//        return infoWindow
+//    }
+//
+//    func infeedVideoAdEnd() -> InFeedViewAdEnd {
+//        let infoWindow = InFeedViewAdEnd.instanceFromNib() as! InFeedViewAdEnd
+//        return infoWindow
+//    }
     
     
     @objc public func getTracker() -> VmaxTracker?{
@@ -175,54 +175,54 @@ import VMaxAdsSDK
     
 }
 
-extension InfeedAds: CtaButtonClicked {
-    func icontapped() {
-        self.vmaxDataListeners.onAdElementClicked(.asset_ImageIcon, vmaxAdView: self.adView)
-    }
-    
-    func titletapped() {
-        self.vmaxDataListeners.onAdElementClicked(.asset_Title, vmaxAdView: self.adView)
-    }
-    
-    func replaytapped() {
-        self.vmaxDataListeners.onAdElementClicked(.asset_Replay, vmaxAdView: self.adView)
-    }
-    
-    func ctaButtonClicked() {
-        self.vmaxAdTrackers?.onClick {
-            let vmaxDataListener = VmaxDataListener()
-            if let adView = self.adView {
-                vmaxDataListener.onAdClicked(adView)
-            }
-        }
-    }
-    
-    func descriptiontapped() {
-        self.vmaxAdTrackers?.onClick {
-            let vmaxDataListener = VmaxDataListener()
-            if let adView = self.adView {
-                vmaxDataListener.onAdClicked(adView)
-            }
-        }
-    }
-    
-    func backViewTapped() {
-        self.vmaxDataListeners.onAdElementClicked(.asset_False_Replay, vmaxAdView: self.adView) //zeeShorts Changes 0.0.8
-    }
-    
-    func timeOver() {
-        self.vmaxDataListeners.onAdElementClicked(.asset_Replay, vmaxAdView: self.adView)
-    }
-    
-    //zeeShorts Changes 0.0.8
-    func swipedDown() {
-        self.vmaxAdTrackers?.logEvent("Skip")
-        self.vmaxDataListeners.onAdSwiped(.GESTURE_SWIPE_DOWN, vmaxAdView: self.adView)
-    }
-    
-    //zeeShorts Changes 0.0.8
-    func swipedUp() {
-        self.vmaxAdTrackers?.logEvent("Skip")
-        self.vmaxDataListeners.onAdSwiped(.GESTURE_SWIPE_UP, vmaxAdView: self.adView)
-    }
-}
+//extension InfeedAds: CtaButtonClicked {
+//    func icontapped() {
+//        self.vmaxDataListeners.onAdElementClicked(.asset_ImageIcon, vmaxAdView: self.adView)
+//    }
+//
+//    func titletapped() {
+//        self.vmaxDataListeners.onAdElementClicked(.asset_Title, vmaxAdView: self.adView)
+//    }
+//
+//    func replaytapped() {
+//        self.vmaxDataListeners.onAdElementClicked(.asset_Replay, vmaxAdView: self.adView)
+//    }
+//
+//    func ctaButtonClicked() {
+//        self.vmaxAdTrackers?.onClick {
+//            let vmaxDataListener = VmaxDataListener()
+//            if let adView = self.adView {
+//                vmaxDataListener.onAdClicked(adView)
+//            }
+//        }
+//    }
+//
+//    func descriptiontapped() {
+//        self.vmaxAdTrackers?.onClick {
+//            let vmaxDataListener = VmaxDataListener()
+//            if let adView = self.adView {
+//                vmaxDataListener.onAdClicked(adView)
+//            }
+//        }
+//    }
+//
+//    func backViewTapped() {
+//        self.vmaxDataListeners.onAdElementClicked(.asset_False_Replay, vmaxAdView: self.adView) //zeeShorts Changes 0.0.8
+//    }
+//
+//    func timeOver() {
+//        self.vmaxDataListeners.onAdElementClicked(.asset_Replay, vmaxAdView: self.adView)
+//    }
+//
+//    //zeeShorts Changes 0.0.8
+//    func swipedDown() {
+//        self.vmaxAdTrackers?.logEvent("Skip")
+//        self.vmaxDataListeners.onAdSwiped(.GESTURE_SWIPE_DOWN, vmaxAdView: self.adView)
+//    }
+//
+//    //zeeShorts Changes 0.0.8
+//    func swipedUp() {
+//        self.vmaxAdTrackers?.logEvent("Skip")
+//        self.vmaxDataListeners.onAdSwiped(.GESTURE_SWIPE_UP, vmaxAdView: self.adView)
+//    }
+//}
