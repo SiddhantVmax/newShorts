@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'newShorts'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'VMaxAdTemplatehelper helps publishers to draw customized Ads experiences.'
   s.description  = "The experiences can be uploaded in the form of Templates in the Ad Console"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '5'
   s.source_files = 'newShorts/Classes/**/*'
   
   # s.resource_bundles = {

@@ -1,9 +1,11 @@
+import VMaxAdsSDK
 
 public class Server {
     
-    let name = "Warcraft"
-    public static var shared = Server()
-    public func getServerName(serverName: String) -> String{
-        return serverName
+    
+    public func cacheAds() {
+        let adView = VMaxAdView(adspotID: "1234", viewController: UIViewController(), withAdUXType: .native) as! VMaxAdView
+        adView.cacheAd()
     }
+    
 }
